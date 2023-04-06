@@ -41,6 +41,9 @@
 - @RestController annotation is used to make the StudentController as a controller layer.
 - We perform the CRUD operations such as @PostMapping , @GetMapping , @PutMapping , @DeleteMapping.
 
+![Screenshot (76)](https://user-images.githubusercontent.com/112794922/230359174-9d8a1441-803b-4377-bb2e-e81efbc3322f.png)
+
+
 
 - ### API Reference
 

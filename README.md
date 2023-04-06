@@ -105,6 +105,9 @@
 - spring.jpa.defer-datasource-initialization=true
 - The above property is used to tell the SpringBoot to create table before inserting the data.
 
+![Screenshot (76)](https://user-images.githubusercontent.com/112794922/230359705-af7bb594-b48f-4707-8207-3f9ba4316e91.png)
+
+
 ### Data.sql file:
 - This file is used to write the queries for inserting the data in the database.
 

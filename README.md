@@ -22,6 +22,9 @@
 - Spring-boot-starter-data-jpa
 - H2 Database
 - Hibernate-validator
+
+![Screenshot (71)](https://user-images.githubusercontent.com/112794922/230356468-292c5036-ad97-4495-95ad-70af0d17bb79.png)
+
 ## Data Flow:
 
 ### Model:

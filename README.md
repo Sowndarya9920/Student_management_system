@@ -82,6 +82,9 @@
 - @Service annotation is used to make the class as service layer.
 - The StudentService class implements the IStudentService interface where we declare all the methods.
 
+![Screenshot (76)](https://user-images.githubusercontent.com/112794922/230357693-4f185ac2-4d3b-4fa8-85c7-021d5bdb96bf.png)
+
+
 ### Repository:
 - It consists of an interface IStudentRepository which extends the JpaRepository which is mainly used for managing the data in Spring boot application.
 

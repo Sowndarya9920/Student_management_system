@@ -4,6 +4,9 @@
 - The aim of this project is to create a simple student management application where we perform the basic CRUD operations.
 - We use spring initializer to create the spring boot application.
 
+![Screenshot (70)](https://user-images.githubusercontent.com/112794922/230353722-f69081b4-d5f0-41db-9f8c-6c2e9b97767f.png)
+
+
 
 ## Frameworks and Languages used:
 

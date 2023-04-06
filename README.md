@@ -33,6 +33,9 @@
 - @Entity annotation is used to create table in database.
 - @Id annotation is used to create the primary key and @GeneratedValue(strategy=GenerationType.IDENTITY) for auto increment.
 
+![Screenshot (76)](https://user-images.githubusercontent.com/112794922/230358666-1cf87a8c-e322-45dc-a80a-d39d220735c7.png)
+
+
 ### Controller:
 - It consists of a class named StudentController which basically controls the flow of data.
 - @RestController annotation is used to make the StudentController as a controller layer.

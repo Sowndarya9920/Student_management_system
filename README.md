@@ -1,5 +1,5 @@
 
-# Student Management System
+# Student Administration
 
 - The aim of this project is to create a simple student management application where we perform the basic CRUD operations.
 - We use spring initializer to create the spring boot application.

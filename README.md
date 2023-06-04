@@ -1,6 +1,6 @@
-![Recipe-Management](https://github.com/Sowndarya9920/Recipe_Management_System/assets/112794922/0bf49c3b-4d8f-4ee7-850d-377bd20f5af2)
+![StudentAdministration](https://github.com/Sowndarya9920/Student_management_system/assets/112794922/e5e71b49-278c-419b-9f63-4f25ee5527c9)
    
-   ##### 🔸This is simple recipe management system built using Spring Boot framework. The idea was to build  a simple recipe management to perform basic CRUD operations                  with some validations and also auhentication.
+##### 🔸This is simple recipe management system built using Spring Boot framework. The idea was to build  a simple recipe management to perform basic CRUD operations with some validations and also auhentication.
 ## :one: Frameworks and Languages Used -
     1. SpringBoot
     2. JAVA

@@ -1,121 +1,105 @@
+![Recipe-Management](https://github.com/Sowndarya9920/Recipe_Management_System/assets/112794922/0bf49c3b-4d8f-4ee7-850d-377bd20f5af2)
+   
+   ##### 🔸This is simple recipe management system built using Spring Boot framework. The idea was to build  a simple recipe management to perform basic CRUD operations                  with some validations and also auhentication.
+## :one: Frameworks and Languages Used -
+    1. SpringBoot
+    2. JAVA
+    3. Postman
+    4. SQL
+    
+## :two: Dependency Used
+    1. Spring Web
+    2. Spring Boot Dev Tools
+    3. Lombok
+    4. Spring Data JPA
+    5. MySQL Driver
+    6. Validation
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## :three: Dataflow (Functions Used In)
+### :white_flower: 1. Model - This used to show the mirror of our database which involves real world entities.
+#### :o: AuthenticationToken.java
+#### :o: User.java
+#### :o: PremiumRole.java
+#### :o: Recipe.java
+#### :o: Ingredients.java
+#### :o: ProcessStatus.java
 
-# Student Administration
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-- The aim of this project is to create a simple student management application where we perform the basic CRUD operations.
-- We use spring initializer to create the spring boot application.
-
-![Screenshot (70)](https://user-images.githubusercontent.com/112794922/230353722-f69081b4-d5f0-41db-9f8c-6c2e9b97767f.png)
-
-
-
-## Frameworks and Languages used:
-
-- Java
-- SpringBoot
-- H2 Database
-## Dependency used:
-
-- Spring Web
-- Spring Boot Dev Tool
-- Lombook
-- Springdoc-openapi-ui
-- Spring-boot-starter-data-jpa
-- H2 Database
-- Hibernate-validator
-
-![Screenshot (71)](https://user-images.githubusercontent.com/112794922/230356468-292c5036-ad97-4495-95ad-70af0d17bb79.png)
-
-## Data Flow:
-
-### Model:
-- It consists of class name called Student it is typically used to "model" data in our application.
-- We use @Data , @AllArgsConstructor , @NoArgsConstructor annotations in order to create getters,setters,toString method and constructors.
-- @Entity annotation is used to create table in database.
-- @Id annotation is used to create the primary key and @GeneratedValue(strategy=GenerationType.IDENTITY) for auto increment.
-
-![Screenshot (76)](https://user-images.githubusercontent.com/112794922/230358666-1cf87a8c-e322-45dc-a80a-d39d220735c7.png)
-
-
-### Controller:
-- It consists of a class named StudentController which basically controls the flow of data.
-- @RestController annotation is used to make the StudentController as a controller layer.
-- We perform the CRUD operations such as @PostMapping , @GetMapping , @PutMapping , @DeleteMapping.
-
-![Screenshot (76)](https://user-images.githubusercontent.com/112794922/230359174-9d8a1441-803b-4377-bb2e-e81efbc3322f.png)
+### :white_flower: 2. Service - This Layer is used to perform business functionalities.
+#### :o: HeadAdminService.java
+#### :o: IngredientsService.java
+#### :o: PremiumRoleService.java
+#### :o: RecipeService.java
+#### :o: TokenService.java
+#### :o: UserService.java
 
 
+----------------------------------------------------------------------------------------------------------------------------------------------------
 
-- ### API Reference
+### :white_flower: 3. Controller - This Controller is used to create RestApi's and perform basic CRUD operations.
+#### :o: IngredientsController.java
+#### :o: PremiumRoleController.java
+#### :o: RecipeController.java
+#### :o: UserController.java
 
-  #### Add Students
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### :white_flower: 4. Repository : data access object (DAO) is an object that provides an abstract interface to some type of database or other persistence mechanisms.
+#### :o: IIngredientsDao.java
+#### :o: IPremiumRoleDao.java
+#### :o: IRecipeDao.java
+#### :o: ITokenDao.java
+#### :o: IUserDao.java
 
-  ```http
-   https://localhost:8080/api/student-app/add-student
-  ```
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+### :white_flower: 5. Dto : Data transfer object
+#### :o: SignInInput.java
+#### :o: SignInOutput.java
+#### :o: SignUpInput.java
+#### :o: SignUpOutput.java
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+## :five: Test Rest Api's
+#### :white_check_mark: User Controller
+```java
+http://localhost:8080/signUp
+```
 
-  #### Find All Students
+```java
+http://localhost:8080/signIn
+```
 
-  ```http
-   https://localhost:8080/api/student-app/find-all-students
-  ```
+#### :white_check_mark: PremiumRole Controller
+```java
+http://localhost:8080/roles
+```
 
-  #### Find Student By Id
+#### :white_check_mark: Recipe Controller
+```java
+http://localhost:8080/recipe
+```
 
-  ```http
-   https://localhost:8080/api/student-app/find-student/id/{id}
-  ```
+#### :white_check_mark: Ingredients Controller
+```java
+http://localhost:8080/ingredients
+```
 
-  #### Update Student
-
-  ```http
-   https://localhost:8080/api/student-app/update-student/id/{id}
-  ```
-
-  #### Delete Student
-
-  ```http
-   https://localhost:8080/api/student-app/delete-student/id/{id}
-  ```
-
-
-
-
-
-
-
-### Service:
-- It consists of a class caller StudentService and an interface called IStudentService where it helps us with business functionalities.
-- @Service annotation is used to make the class as service layer.
-- The StudentService class implements the IStudentService interface where we declare all the methods.
-
-![Screenshot (76)](https://user-images.githubusercontent.com/112794922/230357693-4f185ac2-4d3b-4fa8-85c7-021d5bdb96bf.png)
-
-
-### Repository:
-- It consists of an interface IStudentRepository which extends the JpaRepository which is mainly used for managing the data in Spring boot application.
-
-## Resources:
-### Application.properties File:
-- spring.datasource.url=jdbc:h2:mem:studentdb
-- spring.datasource.driverClassName=org.h2.Driver
-- spring.datasource.username=sa
-- spring.datasource.password=
-- spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
-- The above properties is used for creating url's , username , password for H2 database.
-- spring.jpa.defer-datasource-initialization=true
-- The above property is used to tell the SpringBoot to create table before inserting the data.
-
-![Screenshot (76)](https://user-images.githubusercontent.com/112794922/230359705-af7bb594-b48f-4707-8207-3f9ba4316e91.png)
+## :six: Documentation in Swagger
+```java
+ http://localhost:8080/swagger-ui/index.html#/
+```
+![image](https://github.com/Sowndarya9920/Recipe_Management_System/assets/112794922/29532ed4-f71d-44d2-b4bd-b38f75c68641)
 
 
-### Data.sql file:
-- This file is used to write the queries for inserting the data in the database.
+## :seven: View in mySql Database
 
-## Documentation
-- For documentation of Rest Api's we use Swagger.
-
-[Swagger](https://localhost:8080/swagger-ui.html)
+![image](https://github.com/Sowndarya9920/Recipe_Management_System/assets/112794922/3e6f6f82-002c-4846-8146-672facd32099)
 
 
-## Project Description:
-- In this project I have created the Rest Api's for performing various CRUD operations such as add , read , delete , update. In order to insert the data I have used H2 database which is a in-memory database.
+
+#  Summary
+- :small_orange_diamond:  This is a sample recipe management system that allows two users :
+- :one: Normal
+- :two: Admin
+- :small_orange_diamond: Admin users have all access to perform all the CRUD operations whereas the normal users can only edit and view the receipes.
+-  :small_orange_diamond: The API is built using mySQL database to store the recipes,ingredients and all its fields . IP Address of the deployment link must be static to ensure its availability. Additionally , the Api's uses annotation based validations to ensure that all the user inputs are valid before being processed.
+-  :small_orange_diamond: Therefore , this project provides a scalable and secure API that allows to manage all the datas.

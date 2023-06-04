@@ -1,4 +1,6 @@
-![StudentAdministration](https://github.com/Sowndarya9920/Student_management_system/assets/112794922/e5e71b49-278c-419b-9f63-4f25ee5527c9)
+# Student Administration
+![60d0f685e4661743bd213cb3_Effective-school-administration-supports-databased-decision-making_896_6065058_0_14102171_1000](https://github.com/Sowndarya9920/Student_management_system/assets/112794922/1d9d7146-1ff1-4be3-8d6e-5c4fc0275dbf)
+
    
 ##### 🔸This is simple recipe management system built using Spring Boot framework. The idea was to build  a simple recipe management to perform basic CRUD operations with some validations and also auhentication.
 ## :one: Frameworks and Languages Used -

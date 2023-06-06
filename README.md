@@ -37,51 +37,41 @@
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 ### :white_flower: 5. Application.properties File : The application.properties file in Spring Boot is a configuration file used to specify various settings and properties for the application.
 ```java
-
+spring.datasource.url=jdbc:h2:mem:studentdb
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+spring.jpa.defer-datasource-initialization=true
 ```
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 ## :five: Test Rest Api's
-#### :white_check_mark: User Controller
+#### :white_check_mark: Student Controller
 ```java
-http://localhost:8080/signUp
+http://localhost:8080/add-student
 ```
 
 ```java
-http://localhost:8080/signIn
+http://localhost:8080/find-all-students
 ```
 
-#### :white_check_mark: PremiumRole Controller
 ```java
-http://localhost:8080/roles
+http://localhost:8080/find-student/id/{id}
 ```
 
-#### :white_check_mark: Recipe Controller
 ```java
-http://localhost:8080/recipe
+http://localhost:8080/update-student
 ```
 
-#### :white_check_mark: Ingredients Controller
 ```java
-http://localhost:8080/ingredients
+http://localhost:8080/delete-student
 ```
 
 ## :six: Documentation in Swagger
 ```java
  http://localhost:8080/swagger-ui/index.html#/
 ```
-![image](https://github.com/Sowndarya9920/Recipe_Management_System/assets/112794922/29532ed4-f71d-44d2-b4bd-b38f75c68641)
-
-
-## :seven: View in mySql Database
-
-![image](https://github.com/Sowndarya9920/Recipe_Management_System/assets/112794922/3e6f6f82-002c-4846-8146-672facd32099)
-
-
 
 #  Summary
-- :small_orange_diamond:  This is a sample recipe management system that allows two users :
-- :one: Normal
-- :two: Admin
-- :small_orange_diamond: Admin users have all access to perform all the CRUD operations whereas the normal users can only edit and view the receipes.
--  :small_orange_diamond: The API is built using mySQL database to store the recipes,ingredients and all its fields . IP Address of the deployment link must be static to ensure its availability. Additionally , the Api's uses annotation based validations to ensure that all the user inputs are valid before being processed.
--  :small_orange_diamond: Therefore , this project provides a scalable and secure API that allows to manage all the datas.
+- :small_orange_diamond: Implemented basic CRUD operations (Create, Read, Update, Delete) to manage student records, and you utilized the H2 database for storing and manipulating the data.
+- :small_orange_diamond: The system allows you to create new student records, retrieve existing records based on various criteria, update student information, and delete student records as needed, all using the H2 database as the underlying storage.

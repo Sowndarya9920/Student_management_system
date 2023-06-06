@@ -2,63 +2,43 @@
 ![60d0f685e4661743bd213cb3_Effective-school-administration-supports-databased-decision-making_896_6065058_0_14102171_1000](https://github.com/Sowndarya9920/Student_management_system/assets/112794922/1d9d7146-1ff1-4be3-8d6e-5c4fc0275dbf)
 
    
-##### 🔸This is simple recipe management system built using Spring Boot framework. The idea was to build  a simple recipe management to perform basic CRUD operations with some validations and also auhentication.
+##### 🔸The student administration system you have built using the Spring Boot framework is designed to handle basic CRUD (Create, Read, Update, Delete) operations for managing student records.
 ## :one: Frameworks and Languages Used -
     1. SpringBoot
     2. JAVA
     3. Postman
-    4. SQL
+    4. H2 Database
     
 ## :two: Dependency Used
     1. Spring Web
     2. Spring Boot Dev Tools
     3. Lombok
     4. Spring Data JPA
-    5. MySQL Driver
-    6. Validation
+    5. H2
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## :three: Dataflow (Functions Used In)
 ### :white_flower: 1. Model - This used to show the mirror of our database which involves real world entities.
-#### :o: AuthenticationToken.java
-#### :o: User.java
-#### :o: PremiumRole.java
-#### :o: Recipe.java
-#### :o: Ingredients.java
-#### :o: ProcessStatus.java
+#### :o: Student.java
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### :white_flower: 2. Service - This Layer is used to perform business functionalities.
-#### :o: HeadAdminService.java
-#### :o: IngredientsService.java
-#### :o: PremiumRoleService.java
-#### :o: RecipeService.java
-#### :o: TokenService.java
-#### :o: UserService.java
-
+#### :o: StudentService.java
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### :white_flower: 3. Controller - This Controller is used to create RestApi's and perform basic CRUD operations.
-#### :o: IngredientsController.java
-#### :o: PremiumRoleController.java
-#### :o: RecipeController.java
-#### :o: UserController.java
+#### :o: StudentController.java
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### :white_flower: 4. Repository : data access object (DAO) is an object that provides an abstract interface to some type of database or other persistence mechanisms.
-#### :o: IIngredientsDao.java
-#### :o: IPremiumRoleDao.java
-#### :o: IRecipeDao.java
-#### :o: ITokenDao.java
-#### :o: IUserDao.java
+#### :o: IStudentsDao.java
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
-### :white_flower: 5. Dto : Data transfer object
-#### :o: SignInInput.java
-#### :o: SignInOutput.java
-#### :o: SignUpInput.java
-#### :o: SignUpOutput.java
+### :white_flower: 5. Application.properties File : The application.properties file in Spring Boot is a configuration file used to specify various settings and properties for the application.
+```java
+
+```
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 ## :five: Test Rest Api's
 #### :white_check_mark: User Controller
